@@ -12,6 +12,7 @@ export default defineConfig(({ command }) => {
         publicDir: "non_existent_folder",
         build: {
             outDir: "public/build",
+            manifest: true,
             rollupOptions: {
                 input: ["resources/js/main.ts"],
             },

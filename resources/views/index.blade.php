@@ -8,12 +8,12 @@
 
     @production
         @php
-            $manifest = json_decode(file_get_contents(public_path('js/manifest.json')), true);
+            $manifest = json_decode(file_get_contents(public_path('build/manifest.json')), true);
         @endphp
         @foreach ($manifest as $export)
             @if (isset($export['css']))
                 @foreach ($export['css'] as $url)
-                    <link rel="stylesheet" href="/js/{{ $url }}" />
+                    <link rel="stylesheet" href="/build/{{ $url }}" />
                 @endforeach
             @endif
         @endforeach
@@ -22,12 +22,11 @@
 
 <body>
     <div id="app"></div>
-
     @production
         @php
-            $manifest = json_decode(file_get_contents(public_path('js/manifest.json')), true);
+            $manifest = json_decode(file_get_contents(public_path('build/manifest.json')), true);
         @endphp
-        <script type="module" src="/js/{{ $manifest['resources/js/main.js']['file'] }}"></script>
+        <script type="module" src="/build/{{ $manifest['resources/js/main.ts']['file'] }}"></script>
     @else
         <script type="module" src="http://localhost:3000/@vite/client"></script>
         <script type="module" src="http://localhost:3000/resources/js/main.ts"></script>
