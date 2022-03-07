@@ -7,6 +7,7 @@ This starter template includes:
 - Vue 3
 - Tailwind CSS (w/ `@tailwindcss/forms` and `@tailwindcss/aspect-ratio`)
 - Vue Router
+- Axios
 - Headless UI
 - Heroicons
 - TypeScript
