@@ -1,15 +1,12 @@
-# Laravel 9 + Vite + Vue 3 + Tailwind CSS
+# Laravel 9 + Vite + Svelte + Tailwind CSS
 
 This starter template includes:
 
 - Laravel 9
 - Vite
-- Vue 3
+- Svelte
 - Tailwind CSS (w/ `@tailwindcss/forms` and `@tailwindcss/aspect-ratio`)
-- Vue Router
 - Axios
-- Headless UI
-- Heroicons
 - TypeScript
 
 ## Installation
