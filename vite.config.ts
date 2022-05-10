@@ -1,7 +1,6 @@
 import { defineConfig } from "vite";
-import { fileURLToPath, URL } from "url";
 
-import Vue from "@vitejs/plugin-vue";
+import { svelte } from "@sveltejs/vite-plugin-svelte";
 
 export default defineConfig(({ command }) => {
     const IS_DEV = command === "serve";
@@ -16,11 +15,6 @@ export default defineConfig(({ command }) => {
                 input: ["resources/js/main.ts", "resources/css/app.css"],
             },
         },
-        resolve: {
-            alias: {
-                "@": fileURLToPath(new URL("./resources/js", import.meta.url)),
-            },
-        },
-        plugins: [Vue()],
+        plugins: [svelte()],
     };
 });
