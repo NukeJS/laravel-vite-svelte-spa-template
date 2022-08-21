@@ -1,20 +1,19 @@
 import { defineConfig } from "vite";
 
+import laravel from 'laravel-vite-plugin'
 import { svelte } from "@sveltejs/vite-plugin-svelte";
 
-export default defineConfig(({ command }) => {
-    const IS_DEV = command === "serve";
-
-    return {
-        base: IS_DEV ? "" : "/build/",
-        publicDir: "non_existent_folder",
-        build: {
-            outDir: "public/build",
-            manifest: true,
-            rollupOptions: {
-                input: ["resources/js/main.ts", "resources/css/app.css"],
-            },
+export default defineConfig({
+    plugins: [
+        laravel([
+            'resources/css/app.css',
+            'resources/js/main.ts'
+        ]),
+        svelte()
+    ],
+    resolve: {
+        alias: {
+            "@": '/resources/js',
         },
-        plugins: [svelte()],
-    };
+    },
 });
