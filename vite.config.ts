@@ -11,9 +11,4 @@ export default defineConfig({
         ]),
         svelte()
     ],
-    resolve: {
-        alias: {
-            "@": '/resources/js',
-        },
-    },
 });
