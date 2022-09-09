@@ -9,6 +9,11 @@ This starter template includes:
 -   Axios
 -   TypeScript
 
+## Information
+
+-   The app is located in [`resources/js/`](/resources/js/).
+-   You can use [`resources/css/`](/resources/css/) for styling.
+
 ## Installation
 
 Install the composer dependencies:
@@ -49,7 +54,7 @@ php artisan serve
 
 ## Deployment
 
-Build the Svelte app:
+Build the app:
 
 ```bash
 npm run build
