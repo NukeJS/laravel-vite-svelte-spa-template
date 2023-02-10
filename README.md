@@ -5,7 +5,7 @@ This starter template includes:
 -   Laravel 9
 -   Vite
 -   Svelte
--   Tailwind CSS (w/ `@tailwindcss/forms` and `@tailwindcss/aspect-ratio`)
+-   Tailwind CSS (w/ `@tailwindcss/forms`)
 -   Axios
 -   TypeScript
 
