@@ -40,7 +40,7 @@ Install all `package.json` dependencies:
 npm install
 ```
 
-Run vite to server your assets/bundle:
+Run vite to serve your assets/bundle:
 
 ```bash
 npm run dev
