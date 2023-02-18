@@ -5,7 +5,8 @@ import { svelte } from "@sveltejs/vite-plugin-svelte";
 
 export default defineConfig({
     plugins: [
-        laravel([
+        // @ts-expect-error
+        laravel.default([
             'resources/css/app.css',
             'resources/js/main.ts'
         ]),

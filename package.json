@@ -1,30 +1,31 @@
 {
     "private": true,
+    "type": "module",
     "scripts": {
         "dev": "vite",
         "build": "vite build",
         "check": "svelte-check --tsconfig ./tsconfig.json"
     },
     "dependencies": {
-        "autoprefixer": "^10.4.13",
-        "axios": "^1.3.2",
-        "tailwindcss": "^3.2.6"
+        "axios": "^1.3.3",
+        "tailwindcss": "^3.2.7"
     },
     "devDependencies": {
         "@rushstack/eslint-patch": "^1.2.0",
         "@sveltejs/vite-plugin-svelte": "^2.0.2",
         "@tailwindcss/forms": "^0.5.3",
         "@tsconfig/svelte": "^3.0.0",
-        "@types/node": "^18.13.0",
-        "eslint": "^8.33.0",
+        "@types/node": "^18.14.0",
+        "autoprefixer": "^10.4.13",
+        "eslint": "^8.34.0",
         "laravel-vite-plugin": "^0.7.4",
         "postcss": "^8.4.21",
         "prettier": "^2.8.4",
-        "prettier-plugin-tailwindcss": "^0.2.2",
+        "prettier-plugin-tailwindcss": "^0.2.3",
         "svelte": "^3.55.1",
         "svelte-check": "^3.0.3",
         "tslib": "^2.5.0",
         "typescript": "^4.9.5",
-        "vite": "^4.1.1"
+        "vite": "^4.1.2"
     }
 }
